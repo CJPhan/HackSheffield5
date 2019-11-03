@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.*;
 import android.view.*;
 import android.widget.*;
+import android.content.*;
 
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener{
@@ -42,7 +43,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     public void onClick(View v){
         switch(v.getId()){
             case R.id.bSignIn:
-
+                startActivity(new Intent(this, MainActivity.class));
                 break;
             /* case R.id.registerLink:
                 startActivity(new Intent(this, RegisterActivity.class));
